@@ -1,0 +1,60 @@
+# GSMArena Scraper Workflow Dosyası
+name: GSMArena Monitor & Scrape
+
+# Bu workflow'u tetikleyecek olaylar
+on:
+  # Her 15 dakikada bir otomatik olarak çalıştırır.
+  schedule:
+    - cron: '*/15 * * * *'
+  
+  # GitHub Actions arayüzünden manuel olarak başlatma imkanı sağlar (test için kullanışlıdır).
+  workflow_dispatch:
+
+# Workflow'un çalıştıracağı işler
+jobs:
+  run-scraper:
+    # İşin çalışacağı sanal makine ortamı. Ubuntu'nun en son sürümü kullanılır.
+    runs-on: ubuntu-latest
+    
+    # Bu işin, repository'nin içeriğine yazma izni olması gerektiğini belirtir.
+    # Bu izin, script'in 'last_phones_data.json' dosyasını güncelleyip push etmesi için zorunludur.
+    permissions:
+      contents: write
+
+    # İşin adımları
+    steps:
+      # 1. Adım: Repository'deki kodları sanal makineye çeker (checkout).
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Adım: Belirtilen Python sürümünü kurar.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # Stabil bir Python sürümü
+
+      # 3. Adım: Google Chrome'u kurar. Selenium'un headless çalışması için gereklidir.
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+      # 4. Adım: Python scriptinin ihtiyaç duyduğu kütüphaneleri kurar.
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium webdriver-manager
+
+      # 5. Adım: Python scriptini çalıştırır.
+      # 'env' bloğu ile GitHub Secrets'ta tanımlanan değerler, scriptin içinde erişilebilir hale getirilir.
+      - name: Run GSMArena Scraper Script
+        env:
+          PHP_SAVE_URL_ENV: ${{ secrets.PHP_SAVE_URL_ENV }}
+          GEMINI_API_KEY_ENV: ${{ secrets.GEMINI_API_KEY_ENV }}
+          SMTP_SERVER_ENV: ${{ secrets.SMTP_SERVER_ENV }}
+          SMTP_PORT_ENV: ${{ secrets.SMTP_PORT_ENV }}
+          SMTP_USERNAME_ENV: ${{ secrets.SMTP_USERNAME_ENV }}
+          SMTP_PASSWORD_ENV: ${{ secrets.SMTP_PASSWORD_ENV }}
+          SENDER_EMAIL_ENV: ${{ secrets.SENDER_EMAIL_ENV }}
+          RECEIVER_EMAIL_ENV: ${{ secrets.RECEIVER_EMAIL_ENV }}
+        run: python gsmarena_monitor_and_scrape.py
