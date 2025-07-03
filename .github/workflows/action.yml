@@ -5,7 +5,7 @@ name: GSMArena Monitor & Scrape
 on:
   # Her 15 dakikada bir otomatik olarak çalıştırır.
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
   
   # GitHub Actions arayüzünden manuel olarak başlatma imkanı sağlar (test için kullanışlıdır).
   workflow_dispatch:
