@@ -1,5 +1,9 @@
 [
     {
+        "name": "Motorola G96",
+        "link": "https://www.gsmarena.com/motorola_g96_5g-13989.php"
+    },
+    {
         "name": "Google Pixel 10 Pro XL",
         "link": "https://www.gsmarena.com/google_pixel_10_pro_xl_5g-13988.php"
     },
@@ -14,9 +18,5 @@
     {
         "name": "Infinix Hot 60i",
         "link": "https://www.gsmarena.com/infinix_hot_60i-13983.php"
-    },
-    {
-        "name": "Tecno Spark 40 Pro",
-        "link": "https://www.gsmarena.com/tecno_spark_40_pro-13985.php"
     }
 ]
