@@ -1,5 +1,13 @@
 [
     {
+        "name": "Google Pixel 10 Pro XL",
+        "link": "https://www.gsmarena.com/google_pixel_10_pro_xl_5g-13988.php"
+    },
+    {
+        "name": "Google Pixel 10 Pro",
+        "link": "https://www.gsmarena.com/google_pixel_10_pro_5g-13987.php"
+    },
+    {
         "name": "Tecno Spark 40 Pro+",
         "link": "https://www.gsmarena.com/tecno_spark_40_pro+-13986.php"
     },
@@ -10,13 +18,5 @@
     {
         "name": "Tecno Spark 40 Pro",
         "link": "https://www.gsmarena.com/tecno_spark_40_pro-13985.php"
-    },
-    {
-        "name": "Tecno Spark 40",
-        "link": "https://www.gsmarena.com/tecno_spark_40_4g-13984.php"
-    },
-    {
-        "name": "Nothing Phone (3)",
-        "link": "https://www.gsmarena.com/nothing_phone_(3)_5g-13969.php"
     }
 ]
