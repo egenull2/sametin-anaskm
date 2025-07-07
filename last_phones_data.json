@@ -1,5 +1,9 @@
 [
     {
+        "name": "Tecno Pova 7 Pro",
+        "link": "https://www.gsmarena.com/tecno_pova_7_pro_5g-13990.php"
+    },
+    {
         "name": "Google Pixel 10 Pro XL",
         "link": "https://www.gsmarena.com/google_pixel_10_pro_xl_5g-13988.php"
     },
@@ -14,9 +18,5 @@
     {
         "name": "Lenovo Legion Y700 (Gen 4)",
         "link": "https://www.gsmarena.com/lenovo_legion_y700_(gen_4)-13993.php"
-    },
-    {
-        "name": "OnePlus Nord 5",
-        "link": "https://www.gsmarena.com/oneplus_nord_5_5g-13992.php"
     }
 ]
