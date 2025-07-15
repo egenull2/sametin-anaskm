@@ -1,5 +1,9 @@
 [
     {
+        "name": "Honor X70",
+        "link": "https://www.gsmarena.com/honor_x70_5g-13994.php"
+    },
+    {
         "name": "Samsung Galaxy F36",
         "link": "https://www.gsmarena.com/samsung_galaxy_f36_5g-14009.php"
     },
@@ -14,9 +18,5 @@
     {
         "name": "Infinix Hot 60 Pro+",
         "link": "https://www.gsmarena.com/infinix_hot_60_pro+-14002.php"
-    },
-    {
-        "name": "Samsung Galaxy Z Flip7",
-        "link": "https://www.gsmarena.com/samsung_galaxy_z_flip7-13712.php"
     }
 ]
