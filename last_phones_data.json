@@ -1,5 +1,9 @@
 [
     {
+        "name": "Honor X70",
+        "link": "https://www.gsmarena.com/honor_x70_5g-13994.php"
+    },
+    {
         "name": "Google Pixel 10 Pro Fold",
         "link": "https://www.gsmarena.com/google_pixel_10_pro_fold-14014.php"
     },
@@ -8,15 +12,11 @@
         "link": "https://www.gsmarena.com/oppo_k13_turbo_pro_5g-14013.php"
     },
     {
-        "name": "Honor X70",
-        "link": "https://www.gsmarena.com/honor_x70_5g-13994.php"
-    },
-    {
         "name": "Samsung Galaxy F36",
         "link": "https://www.gsmarena.com/samsung_galaxy_f36_5g-14009.php"
     },
     {
-        "name": "T-Mobile REVVL Tab 2",
-        "link": "https://www.gsmarena.com/t_mobile_revvl_tab_2-14010.php"
+        "name": "Samsung Galaxy Z Fold7",
+        "link": "https://www.gsmarena.com/samsung_galaxy_z_fold7-13826.php"
     }
 ]
