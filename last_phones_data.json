@@ -1,22 +1,22 @@
 [
     {
+        "name": "Realme 15 Pro",
+        "link": "https://www.gsmarena.com/realme_15_pro_5g-14017.php"
+    },
+    {
+        "name": "Realme 15",
+        "link": "https://www.gsmarena.com/realme_15_5g-14018.php"
+    },
+    {
         "name": "Honor X70",
         "link": "https://www.gsmarena.com/honor_x70_5g-13994.php"
     },
     {
-        "name": "Honor Pad GT2 Pro",
-        "link": "https://www.gsmarena.com/honor_pad_gt2_pro-14015.php"
-    },
-    {
-        "name": "Honor MagicPad 3",
-        "link": "https://www.gsmarena.com/honor_magicpad_3-14016.php"
-    },
-    {
-        "name": "Google Pixel 10 Pro Fold",
-        "link": "https://www.gsmarena.com/google_pixel_10_pro_fold-14014.php"
-    },
-    {
         "name": "Oppo K13 Turbo Pro",
         "link": "https://www.gsmarena.com/oppo_k13_turbo_pro_5g-14013.php"
+    },
+    {
+        "name": "Cubot A40",
+        "link": "https://www.gsmarena.com/cubot_a40-14019.php"
     }
 ]
