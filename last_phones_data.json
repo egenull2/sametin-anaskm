@@ -1,5 +1,9 @@
 [
     {
+        "name": "vivo V60",
+        "link": "https://www.gsmarena.com/vivo_v60_5g-14021.php"
+    },
+    {
         "name": "Realme 15 Pro",
         "link": "https://www.gsmarena.com/realme_15_pro_5g-14017.php"
     },
@@ -14,9 +18,5 @@
     {
         "name": "Honor X70",
         "link": "https://www.gsmarena.com/honor_x70_5g-13994.php"
-    },
-    {
-        "name": "Oppo K13 Turbo Pro",
-        "link": "https://www.gsmarena.com/oppo_k13_turbo_pro_5g-14013.php"
     }
 ]
